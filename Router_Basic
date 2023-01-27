@@ -1,0 +1,13 @@
+service password-encryption
+no ip domain-lookup
+banner modt % ***** No Unauthorized Acess ! ***** %
+enable secret class
+line console 0 
+logging synchronous
+password cisco
+login
+line vty 0 15 
+logging synchronous
+password cisco
+login
+hostname
